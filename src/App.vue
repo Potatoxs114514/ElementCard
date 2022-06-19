@@ -981,6 +981,7 @@ export default {
     display: flex;
     justify-content: center;
     width: 18.75%;
+    min-width: 15em;
     height: 95%;
     margin: 1.25% 0;
     background-color: rgb(99,101,150);
@@ -1240,11 +1241,11 @@ export default {
   .buttongroup {
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 14%;
+    margin-right: 13.5%;
   }
 
   .buttongroup div {
-    margin-left: 2.5em;
+    margin-left: 2.05em;
   }
 
   .bgmbutton {
@@ -1297,6 +1298,7 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     width: 98.8%;
+    min-width: 53.75em;
     height: 98%;
     margin: 0.5% 0.6%;
     background-color: rgb(206,197,195);
@@ -1326,7 +1328,7 @@ export default {
   .card {
     width: 9em;
     height: 14em;
-    margin: 1.2em;
+    margin: 1em;
     background-color: rgb(69,52,86);
     border: rgb(75,67,114) 0.125em solid;
     border-radius: 1em;
