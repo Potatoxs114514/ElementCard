@@ -188,10 +188,10 @@ export default {
       seState: '关',
       gameState: true,
       bossState: true,
-      healthPoint: 10,
-      actionPoint: 10,
-      maxHealthPoint: 10,
-      maxActionPoint: 10,
+      healthPoint: 1000,
+      actionPoint: 1000,
+      maxHealthPoint: 1000,
+      maxActionPoint: 1000,
       monster_1_Dmg: 1,
       monster_2_Dmg: 2,
       monster_3_Dmg: 3,
@@ -421,10 +421,9 @@ export default {
       }
     },
     CreateBlackCard(cardCount) {
+      this.desktopCardList_Change = this.DeepCopy(this.desktopCardList_Origin);
       if(cardCount < 3) return;
       console.log('创建黑暗牌');
-      this.desktopCardList_Change = this.DeepCopy(this.desktopCardList_Origin);
-
       for(let i = 0; i < this.blackCardCount; i++)
       {
         //随机一个位置
