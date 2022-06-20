@@ -111,6 +111,7 @@ export default {
     gameState(val) {
       if(!val)
       {
+        this.bgmState = '关';
         if(this.healthPoint <= 0)
         {
           this.PlaySE(this.sound_Url.lost);
@@ -178,9 +179,10 @@ export default {
         monster: 'SE/ElementCard_Kill.wav',
         card: 'SE/ElementCard_TapCard.wav',
         draw: 'SE/ElementCard_Draw.wav',
-        win: 'SE/ElementCard_AddHPMP.wav',
+        win: 'SE/ElementCard_Win.wav',
         lost: 'SE/ElementCard_Lost.wav',
         skill_AddHP: 'SE/ElementCard_AddHPMP.wav',
+        skill_WhirlwindSword: 'SE/Battle_Attack_Blade.wav'
       },
       bgmState: '关',
       seState: '关',
@@ -251,6 +253,7 @@ export default {
           else
           {
             _this.skill.skill_WhirlwindSword_Ready = false;
+            _this.PlaySE(_this.sound_Url.skill_WhirlwindSword);
             //获得点击的元素
             e.target.classList.add('curclick');
             let desktopCardList = document.getElementById('desktop_background').getElementsByClassName('card');
@@ -1316,7 +1319,7 @@ export default {
       background-position: 0px;
     }
     100% {
-      background-position: 1024px;
+      background-position: 512px;
     }
   }
 
