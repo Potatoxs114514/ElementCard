@@ -240,9 +240,9 @@ export default {
           _this.skill.skill_3_cd = 15;
           _this.CalcHP(5);
         },
-        skill_1_cd: 7,
-        skill_2_cd: 7,
-        skill_3_cd: 10,
+        skill_1_cd: 6,
+        skill_2_cd: 8,
+        skill_3_cd: 8,
         skill_WhirlwindSword_Ready: false,
         skill_WhirlwindSword(e) {
           if(!_this.skill.skill_WhirlwindSword_Ready)
